@@ -8,9 +8,7 @@ Shell script to install a FunTimeCoin Masternodes on a Linux server running Ubun
 Installing Masternode on VPS
  1. Login to VPS using ssh root@(your IP)
  2. Input password
- 3. Input the following and press enter
-	
-**wget -N https://gist.githubusercontent.com/CryptoDev-Project/e3de04abd7c0cc748fda3ccb09ced424/raw/3904af9a3c8d2246f855c863c973d8ec305085ce/install_mn.sh**
+ 3. Input the following and press enter	
  4. Input the following and press enter
 	**bash install_mn.sh**
  5. The script will now install the MN and once finished will ask you for a Genkey 
