@@ -10,8 +10,7 @@ Installing Masternode on VPS
  2. Input password
  3. Input the following and press enter
  ```
- wget -N https://gist.githubusercontent.com/CryptoDev-Project/
- e3de04abd7c0cc748fda3ccb09ced424/raw/3904af9a3c8d2246f855c863c973d8ec305085ce/install_mn.sh
+ wget -N https://gist.githubusercontent.com/CryptoDev-Project/e3de04abd7c0cc748fda3ccb09ced424/raw/3904af9a3c8d2246f855c863c973d8ec305085ce/install_mn.sh
  ```
  4. Input the following and press enter
  ```
