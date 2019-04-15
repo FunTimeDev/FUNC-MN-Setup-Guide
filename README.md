@@ -49,6 +49,7 @@ Alias Address Genkey TxHash Output_index
 startmasternode "alias" "0" "MN1"
 ```
 
+***
 ## Usage:
 ```
 func-cli getinfo
@@ -69,4 +70,4 @@ systemctl is-enabled FunTimeCoin #To check whether FunTimeCoin service is enable
 /etc/init.d/func stop #To stop FunTimeCoin service
 /etc/init.d/func restart #To restart FunTimeCoin service
 ```
-**Please Note:** Preferred version of Ubuntu is 16.04 as its most heavily tested but all should work. Dependencies can vary slightly for 18.04 though so choose 16.04 if possible
+**Please Note:** Preferred version of Ubuntu is 16.04 as its most heavily tested but all should work. Dependencies can vary slightly for 18.04 though so choose 16.04 if possible
