@@ -14,7 +14,7 @@ Installing Masternode on VPS
  ```
  4. Input the following and press enter
  ```
-	**bash install_mn.sh**
+	bash install_mn.sh
 ```
  5. The script will now install the MN and once finished will ask you for a Genkey 
  6. In desktop wallet open **“debug console”**
