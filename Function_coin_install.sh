@@ -18,12 +18,12 @@ BOOTSTRAP_FILE=$(echo $BOOTSTRAP | awk -F'/' '{print $NF}')
 
 NODEIP=$(curl -s4 icanhazip.com)
 
-Blue='"\033[0;34m'
-Yellow='\033[0;33m' 
-Cyan='\033[0;36m'
-Purple='\033[0;35m' 
-Red='\033[0;31m'
-Green='\033[0;32m'
+BLUE='"\033[0;34m'
+YELLOW='\033[0;33m' 
+CYAN='\033[0;36m'
+PURPLE='\033[0;35m' 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
 NC='\033[0m'
 MAG='\033[0;35m'
 
