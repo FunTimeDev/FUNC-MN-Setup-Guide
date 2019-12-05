@@ -71,3 +71,11 @@ systemctl is-enabled Function-Coin #To check whether Function-Coin service is en
 /etc/init.d/func restart #To restart Function-Coin service
 ```
 **Please Note:** Preferred version of Ubuntu is 16.04 as its most heavily tested but all should work. Dependencies can vary slightly for 18.04 though so choose 16.04 if possible
+
+## Should you ever consider removing your Function-Coin masternode from your VPS, than you can use this simple script
+
+- Login to your VPS
+- copy and paste this piece of code below and paste it into your VPS and click return
+```
+wget -qN https://raw.githubusercontent.com/Function-Coin/FUNC-MN-Setup-Guide/master/Function_coin_uninstall.sh; bash Function_coin_uninstall.sh
+```
