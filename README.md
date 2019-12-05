@@ -72,7 +72,9 @@ systemctl is-enabled Function-Coin #To check whether Function-Coin service is en
 ```
 **Please Note:** Preferred version of Ubuntu is 16.04 as its most heavily tested but all should work. Dependencies can vary slightly for 18.04 though so choose 16.04 if possible
 
-## Should you ever consider removing your Function-Coin masternode from your VPS, than you can use this simple script
+## Removing your masternode
+
+**Should you ever consider removing your Function-Coin masternode from your VPS, than you can use this simple script**
 
 - Login to your VPS
 - copy and paste this piece of code below and paste it into your VPS and click return
