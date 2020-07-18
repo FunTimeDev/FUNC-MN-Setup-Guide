@@ -27,18 +27,19 @@ MAG='\033[0;35m'
 
 
 function download_bootstrap() {
+  systemctl stop $COIN_NAME.service
   rm -rf $CONFIGFOLDER/blocks >/dev/null 2>&1
   rm -rf $CONFIGFOLDER/chainstate >/dev/null 2>&1
   rm -rf $CONFIGFOLDER/sporks >/dev/null 2>&1
   rm -rf $CONFIGFOLDER/zerocoin >/dev/null 2>&1
   rm -rf $CONFIGFOLDER/database >/dev/null 2>&1
   rm $CONFIGFOLDER/*.pid >/dev/null 2>&1
-  rm $CONFIGFOLDER/*.dat >/dev/null 2>&1
+  rm $CONFIGFOLDER/peers.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/*.log >/dev/null 2>&1
   wget -q $BOOTSTRAP
   unzip -oq $BOOTSTRAP_FILE -d $CONFIGFOLDER
   rm $BOOTSTRAP_FILE
- 
+  systemctl start $COIN_NAME.service
   echo -e "${GREEN}Bootstrapped your $COIN_NAME masternode with success.${NC}"
  }
  
