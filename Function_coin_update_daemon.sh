@@ -32,7 +32,7 @@ MAG='\033[0;35m'
  
 function update_node() {
   echo -e "${GREEN}Downloading and updating your VPS $COIN_NAME Daemon${NC}"
-  systemctl stop $COIN_NAME
+  systemctl stop $COIN_NAME.service
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TGZ
   tar xvf $COIN_ZIP || unzip $COIN_ZIP >/dev/null 2>&1
@@ -46,7 +46,7 @@ function update_node() {
   strip $COIN_PATH$COIN_CLI >/dev/null 2>&1
   cd - >/dev/null 2>&1
   rm -rf $TMP_FOLDER >/dev/null 2>&1
-  systemctl start $COIN_NAME
+  systemctl start $COIN_NAME.service
   echo -e "${GREEN}Downloaded and updated your VPS $COIN_NAME with the latest Daemon${NC}"
 }
 
