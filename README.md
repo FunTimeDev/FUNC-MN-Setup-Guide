@@ -18,7 +18,7 @@ wget -qN https://raw.githubusercontent.com/Function-Coin/FUNC-MN-Setup-Guide/mas
 ```
  5. The script will now install the MN and once finished will ask you for a Genkey or wait 10 sec and let it generate one for you. Ignore steps 6 - 9 if you let it generate for you.
  6. In desktop wallet open **“debug console”**
- 7. Type **“masternode genkey”**
+ 7. Type **“createmasternodekey”**
  8. Go back to VPS and input genkey and press enter
  9. You will then need the genkey for step 8 below
 
@@ -27,7 +27,7 @@ wget -qN https://raw.githubusercontent.com/Function-Coin/FUNC-MN-Setup-Guide/mas
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps for Windows Wallet
  1. Open the Function-Coin Desktop Wallet.
  2. Go to RECEIVE and create a New Address: **MN1**
- 3. Send **20000 FUNC** to **MN1.**
+ 3. Send **50000 FUNC** to **MN1.**
  4. Wait for 15 confirmations.
  5. Go to **Tools -> "Debug console - Console"**
  6. Type the following command: **getmasternodeoutputs**
@@ -54,7 +54,7 @@ startmasternode "alias" "0" "MN1"
 ```
 func-cli getinfo
 func-cli mnsync status
-func-cli masternode status
+func-cli getmasternodestatus
 ```
 Also, if you want to check/start/stop **Function-Coin** , run one of the following commands as root:
 **Ubuntu 16.04:**
